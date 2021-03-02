@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math"
-	"time"
 
 	"github.com/Arafatk/glot"
 )
@@ -19,20 +18,13 @@ func main() {
 	fmt.Println("Enter end value: ")
 	fmt.Scan(&endValue)
 
-	start := time.Now()
-
 	allSteps := getNumberOfStepsForEachM(startValue, endValue)
 
 	listX, listY := getAxis(allSteps)
 
 	plotGraph(listX, listY)
 
-	duration := time.Since(start)
-
-	fmt.Printf("\nAll steps for each number within a range of numbers from %v to %v \n\n", startValue, endValue)
-	fmt.Println(allSteps, "\n")
-
-	fmt.Printf("--- Took %v seconds ---\n", duration.Seconds())
+	fmt.Printf("\nOpen Collatz.png to view plotted diagram.\n")
 
 }
 
