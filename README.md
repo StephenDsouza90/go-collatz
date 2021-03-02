@@ -136,11 +136,11 @@ Open Collatz.png to view plotted diagram.
 
 Range 1 to 10
 
-![Range 1 to 10](https://github.com/StephenDsouza90/go-collatz/blob/draft/images/Collatz_1_to_10.png)
+![Range 1 to 10](https://github.com/StephenDsouza90/go-collatz/blob/main/images/Collatz_1_to_10.png)
 
 Range 1 to 10000
 
-![Range 1 to 10000](https://github.com/StephenDsouza90/go-collatz/blob/draft/images/Collatz_1_to_10000.png)
+![Range 1 to 10000](https://github.com/StephenDsouza90/go-collatz/blob/main/images/Collatz_1_to_10000.png)
 
 
 ## Install dependencies
