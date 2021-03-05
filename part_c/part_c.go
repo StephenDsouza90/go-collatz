@@ -8,7 +8,6 @@ import (
 )
 
 // Part C counts the number of steps to reach 1 for each number within a range of numbers.
-// The func OptimizedGetNumberOfStepsForEachM() uses an optimized algorithm for computation.
 func main() {
 
 	var startValue int
@@ -22,6 +21,7 @@ func main() {
 
 	start := time.Now()
 
+	// The func OptimizedGetNumberOfStepsForEachM() uses an optimized algorithm for computation.
 	allSteps := utils.OptimizedGetNumberOfStepsForEachM(startValue, endValue)
 
 	duration := time.Since(start)
