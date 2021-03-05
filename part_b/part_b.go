@@ -7,9 +7,8 @@ import (
 	"github.com/StephenDsouza90/CollatzConjecture/utils"
 )
 
+// Part B counts the number of steps to reach 1 for each number within a range of numbers.
 func main() {
-
-	// Part B counts the number of steps to reach 1 for each number within a range of numbers.
 
 	var startValue int
 	var endValue int
@@ -33,17 +32,14 @@ func main() {
 
 }
 
+// getNumberOfStepsForEachM : For each number num within a range of numbers between startValue and endValue,
+// this function returns the number of steps.
+// The number and its corresponding steps are stored in a dict,
+// where key is number num and steps to compute the number is the value.
+// :param startValue: starting number of the range
+// :param endValue: ending number of the range
+// :return allSteps: dict with m as the key and it's corresponding steps as the value
 func getNumberOfStepsForEachM(startValue, endValue int) map[int]int {
-
-	// For each number num within a range of numbers between startValue and endValue,
-	// this function returns the number of steps.
-
-	// The number and its corresponding steps are stored in a dict,
-	// where key is number num and steps to compute the number is the value.
-
-	// :param startValue: starting number of the range
-	// :param endValue: ending number of the range
-	// :return allSteps: dict with m as the key and it's corresponding steps as the value
 
 	allSteps := make(map[int]int)
 

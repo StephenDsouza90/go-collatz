@@ -6,12 +6,11 @@ import (
 	"github.com/StephenDsouza90/CollatzConjecture/utils"
 )
 
+// Part A counts the number of steps it takes for any given positive number to reach 1.
+// The steps follow a sequence defined by "Collatz conjecture" theory (See README).
+// For explanation on the GetNumberOfSteps func
+// see github.com/StephenDsouza90/CollatzConjecture/utils/numberofsteps.go
 func main() {
-
-	// Part A counts the number of steps it takes for any given positive number to reach 1.
-	// The steps follow a sequence defined by "Collatz conjecture" theory (See README).
-	// For explanation on the GetNumberOfSteps func
-	// see github.com/StephenDsouza90/CollatzConjecture/utils/numberofsteps.go
 
 	var userInput int
 

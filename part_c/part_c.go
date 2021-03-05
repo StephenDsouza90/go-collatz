@@ -7,12 +7,9 @@ import (
 	"github.com/StephenDsouza90/CollatzConjecture/utils"
 )
 
-// TODO: Fix timing
-
+// Part C counts the number of steps to reach 1 for each number within a range of numbers.
+// The func OptimizedGetNumberOfStepsForEachM() uses an optimized algorithm for computation.
 func main() {
-
-	// Part C counts the number of steps to reach 1 for each number within a range of numbers.
-	// The func OptimizedGetNumberOfStepsForEachM() uses an optimized algorithm for computation.
 
 	var startValue int
 	var endValue int
