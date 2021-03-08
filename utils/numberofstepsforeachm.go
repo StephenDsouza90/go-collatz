@@ -15,7 +15,7 @@ func OptimizedGetNumberOfStepsForEachM(startValue, endValue int) map[int]int {
 
 		m := num
 		for m != 1 {
-			//	Optimization 1:
+			// Optimization 1:
 			//	Stores the steps for each m in the cache, so that the pre-computed value can be reused
 			//	next time it comes across the number. This will speed up performance.
 			if value, ok := allSteps[m]; ok {
