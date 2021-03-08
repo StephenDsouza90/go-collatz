@@ -5,19 +5,16 @@ import "math"
 // OptimizedGetNumberOfStepsForEachM : This function optimizes the Collatz Conjecture for a given range of numbers
 //	between startValue and endValue and returns the number of steps to reach 1.
 func OptimizedGetNumberOfStepsForEachM(startValue, endValue int) map[int]int {
-
 	//	startValue : starting number of the range
 	//	endValue : ending number of the range
 
 	allSteps := make(map[int]int)
 
 	for num := startValue; num <= endValue; num++ {
-
-		m := num
 		countSteps := 0
 
+		m := num
 		for m != 1 {
-
 			//	Optimization 1:
 			//	Stores the steps for each m in the cache, so that the pre-computed value can be reused
 			//	next time it comes across the number. This will speed up performance.
@@ -47,11 +44,8 @@ func OptimizedGetNumberOfStepsForEachM(startValue, endValue int) map[int]int {
 				m = (m*3 + 1) / 2
 				countSteps += 2
 			}
-
 		}
-
 		allSteps[num] = countSteps
-
 	}
 
 	//	allSteps : Dict with m as the key and it's corresponding steps as the value

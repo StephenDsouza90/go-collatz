@@ -9,7 +9,6 @@ import (
 
 // Part B counts the number of steps to reach 1 for each number within a range of numbers.
 func main() {
-
 	var startValue int
 	var endValue int
 
@@ -20,22 +19,17 @@ func main() {
 	fmt.Scan(&endValue)
 
 	start := time.Now()
-
 	allSteps := getNumberOfStepsForEachM(startValue, endValue)
-
 	duration := time.Since(start)
 
 	fmt.Printf("\nAll steps for each number within a range of numbers from %v to %v \n\n", startValue, endValue)
 	fmt.Println(allSteps)
-
 	fmt.Printf("\n--- Took %v seconds ---\n\n", duration.Seconds())
-
 }
 
 // getNumberOfStepsForEachM : For each number num within a range of numbers between startValue and endValue,
 // this function returns the number of steps.
 func getNumberOfStepsForEachM(startValue, endValue int) map[int]int {
-
 	// startValue : starting number of the range
 	// endValue : ending number of the range
 
@@ -50,5 +44,4 @@ func getNumberOfStepsForEachM(startValue, endValue int) map[int]int {
 
 	// allSteps : Dict with m as the key and it's corresponding steps as the value
 	return allSteps
-
 }

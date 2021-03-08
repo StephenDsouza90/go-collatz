@@ -9,7 +9,6 @@ import (
 
 // Part C counts the number of steps to reach 1 for each number within a range of numbers.
 func main() {
-
 	var startValue int
 	var endValue int
 
@@ -20,15 +19,11 @@ func main() {
 	fmt.Scan(&endValue)
 
 	start := time.Now()
-
 	// The func OptimizedGetNumberOfStepsForEachM() uses an optimized algorithm for computation.
 	allSteps := utils.OptimizedGetNumberOfStepsForEachM(startValue, endValue)
-
 	duration := time.Since(start)
 
 	fmt.Printf("\nAll steps for each number within a range of numbers from %v to %v \n\n", startValue, endValue)
 	fmt.Println(allSteps)
-
 	fmt.Printf("\n--- Took %v seconds ---\n\n", duration.Seconds())
-
 }
