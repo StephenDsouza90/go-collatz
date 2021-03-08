@@ -3,7 +3,7 @@ package utils
 import "math"
 
 // OptimizedGetNumberOfStepsForEachM : This function optimizes the Collatz Conjecture for a given range of numbers
-//	between startValue and endValue and returns the number of steps to reach 1.
+// between startValue and endValue and returns the number of steps to reach 1.
 func OptimizedGetNumberOfStepsForEachM(startValue, endValue int) map[int]int {
 	//	startValue : starting number of the range
 	//	endValue : ending number of the range
