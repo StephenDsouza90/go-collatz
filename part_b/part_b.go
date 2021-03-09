@@ -30,9 +30,6 @@ func main() {
 // getNumberOfStepsForEachM : For each number num within a range of numbers between startValue and endValue,
 // this function returns the number of steps.
 func getNumberOfStepsForEachM(startValue, endValue int) map[int]int {
-	// startValue : starting number of the range
-	// endValue : ending number of the range
-
 	allSteps := make(map[int]int)
 
 	// The number and its corresponding steps are stored in a dict,
@@ -41,7 +38,5 @@ func getNumberOfStepsForEachM(startValue, endValue int) map[int]int {
 		steps := utils.GetNumberOfSteps(num)
 		allSteps[num] = steps
 	}
-
-	// allSteps : Dict with m as the key and it's corresponding steps as the value
 	return allSteps
 }

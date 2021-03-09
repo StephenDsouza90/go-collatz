@@ -7,7 +7,7 @@ import (
 	"github.com/StephenDsouza90/CollatzConjecture/utils"
 )
 
-// Part C counts the number of steps to reach 1 for each number within a range of numbers.
+// Part C counts the number of steps to reach 1 for each number within a range of numbers by using an optimized algorithm.
 func main() {
 	var startValue int
 	var endValue int
@@ -19,7 +19,6 @@ func main() {
 	fmt.Scan(&endValue)
 
 	start := time.Now()
-	// The func OptimizedGetNumberOfStepsForEachM() uses an optimized algorithm for computation.
 	allSteps := utils.OptimizedGetNumberOfStepsForEachM(startValue, endValue)
 	duration := time.Since(start)
 
