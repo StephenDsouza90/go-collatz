@@ -154,14 +154,3 @@ The dependencies for this application are:
 ```
 
 Additional dependencies can be found on [glot](github.com/Arafatk/glot).
-
-
-## Assumptions
-
-The following assumptions are made when implementing the above tasks:
-
-1. The number of steps does not refer to how many loops are required for m to reach 1, but the numbers in the sequence from m to 1.
-2. The optimizations in part(c) are of two fold, the first is an optimization for any single value of m to reach 1 and the second optimization is for all m in a range to reach 1 by using pre-computed steps of already known m.
-3. The diagram in part(d) is a plotted graph of x=m and y=steps.
-4. Inputs are inputted from stdin and outputs are outputted to stdout.
-5. Each task is completely isolated from other tasks, ie. there is no python imports of the functions to be re-used in other parts.
